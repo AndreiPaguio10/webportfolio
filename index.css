@@ -833,3 +833,58 @@
 	    display: none;
 	  }
 	}
+
+		/* Nuclear option - catch any overflow source */
+	* {
+	  max-width: 100%;
+	}
+
+	/* Footer grid fix - force single column on mobile */
+	@media (max-width: 991px) {
+	  .my-footer-section {
+	    padding: 40px 16px;
+	  }
+
+	  .footer-grid {
+	    display: flex !important;
+	    flex-direction: column;
+	    align-items: center;
+	    gap: 30px;
+	  }
+
+	  .footer-left,
+	  .footer-center,
+	  .footer-right {
+	    width: 100%;
+	    max-width: 320px;
+	    justify-self: center;
+	  }
+
+	  .vertical-line {
+	    display: none !important;
+	  }
+	}
+
+	/* Social icons - prevent overflow */
+	.social-icons {
+	  flex-wrap: wrap;
+	  gap: 12px;
+	}
+
+	.social-icons a img {
+	  width: 48px;
+	  height: 48px;
+	}
+
+	/* Fix the contact section row */
+	@media (max-width: 768px) {
+	  #contact .container .row {
+	    margin: 0;
+	  }
+
+	  #contactform {
+	    padding: 30px 20px;
+	    margin: 0 0 2em 0;
+	    width: 100%;
+	  }
+	}
