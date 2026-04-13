@@ -141,6 +141,7 @@
 	}
 
 	#landing {
+		height: 95vh;
 		background: linear-gradient(180deg, rgba(14, 14, 14, 0.6) 0%, rgba(14, 14, 14, 0.8) 50%, #0E0E0E 100%), 
 		url(https://lh3.googleusercontent.com/aida-public/AB6AXuCOeaM4ZW7GPgpBJsOXm6ZxiohJgznZoGH4uPF7FhryqaHGSCfe77sHw4JdjNJtJqxACtR4ka3w98uNSiR6fT48Foyyqgo98lz1YnyFU8MryJdky38tbKJAPHccg3Gta5RgWHXD5PgPk0LlieGgiy0tS7HCSBDnQvMd2YMoh_IBVAO-B8vyppSmNQUIS_tvHATT0u6hsaSfBOiKMcikZcbfankuiY_KGXOFiqIradcAVpazC5Bd3wupb16PvPJR4rIIVn7TKOb3Zqk-);
 		background-size: cover;
@@ -887,4 +888,21 @@
 	    margin: 0 0 2em 0;
 	    width: 100%;
 	  }
+	}
+
+
+	/* Fix Bootstrap row negative margin overflow */
+	.row {
+	  margin-left: 0;
+	  margin-right: 0;
+	}
+
+	.container-fluid {
+	  overflow-x: hidden;
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+
+	.container {
+	  overflow-x: hidden;
 	}
