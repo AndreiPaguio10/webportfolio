@@ -508,7 +508,8 @@
 	}
 
 	button {
-		width: 344px;
+		width: 100%;
+		max-width: 344px;
 		height: 60px;
 		padding-top: 18px;
 		padding-bottom: 20px;
@@ -893,6 +894,19 @@
 	    padding: 30px 20px;
 	    margin: 0 0 2em 0;
 	    width: 100%;
+	  }
+	}
+
+	/* Center contact form on tablet (md breakpoint, below lg) */
+	@media (min-width: 768px) and (max-width: 991px) {
+	  #contactform {
+	    margin-left: auto;
+	    margin-right: auto;
+	    float: none;
+	  }
+
+	  #contact .container .row {
+	    justify-content: center;
 	  }
 	}
 
