@@ -573,7 +573,6 @@
 
 	.my-footer-section {
 	  padding: 60px 0;
-	  margin-top: 10em;
 	}
 
 	.footer-inner {
@@ -597,23 +596,27 @@
 	}
 
 	.my-footer-section {
-	  padding: 70px 40px;
+	  padding: 70px 20px;
 	  background: #0E0E0E;
+	  overflow: hidden;
 	}
 
 	.footer-grid {
-	  max-width: 1400px;
+	  max-width: 100%;
 	  margin: 0 auto;
 	  display: grid;
 	  grid-template-columns: 1fr 1px auto 1px 1fr;
 	  align-items: center;
-	  column-gap: 55px;
+	  column-gap: 30px;
+	  overflow: hidden;
 	}
 
 	.footer-left {
 	  justify-self: end;
-	  width: 320px;
+	  width: 100%;
+	  max-width: 320px;
 	  text-align: center;
+	  min-width: 0;
 	}
 
 	/* center block */
@@ -625,8 +628,10 @@
 	
 	.footer-right {
 	  justify-self: start;
-	  width: 320px;
+	  width: 100%;
+	  max-width: 320px;
 	  text-align: center;
+	  min-width: 0;
 	}
 
 	.footer-logo {
